@@ -83,7 +83,7 @@ This will load the runtime asynchronously.
 
 ## How do I run the generated lexer and/or parser?
 
-Let's suppose that your grammar is named, as above, "MyGrammar". Let's suppose this parser comprises a rule named "StartRule". The tool will have generated for you the following files:
+Let's suppose that your grammar is named, as above, "MyGrammar". Let's suppose this parser comprises a rule named "MyStartRule". The tool will have generated for you the following files:
 
 *   MyGrammarLexer.js
 *   MyGrammarParser.js
@@ -149,7 +149,7 @@ In order to execute this listener, you would simply add the following lines to t
  
 ```javascript
         ...
-       tree = parser.StartRule() - only repeated here for reference
+       tree = parser.MyStartRule() - only repeated here for reference
    var printer = new KeyPrinter();
  antlr4.tree.ParseTreeWalker.DEFAULT.walk(printer, tree);
 ```
